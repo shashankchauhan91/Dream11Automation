@@ -53,6 +53,15 @@ public class Dream11LeaguesTest {
 	    	Assert.assertTrue(leaguePageTitle.equalsIgnoreCase("Play Fantasy Sport | Cricket, Football, NBA, Hockey & Kabaddi | DREAM11"));	
 	  
 	    }
+
+		@Test
+	    public void testLeaguePageAppear()
+	    {
+	    	objLeagues = new LeaguesPage(driver);	    
+	    	String leaguePageTitle = objLeagues.getTitleLeaguePage();	    	
+	    	Assert.assertTrue(leaguePageTitle.equalsIgnoreCase("Play Fantasy Sport | Cricket, Football, NBA, Hockey & Kabaddi | DREAM11"));	
+	  
+	    }
 	    
 	    @Test
 	    public void printAndTestUpComingMatch()
